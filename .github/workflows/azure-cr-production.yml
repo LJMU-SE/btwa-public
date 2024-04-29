@@ -1,0 +1,34 @@
+name: Build and Push to ACR
+
+on:
+    push:
+        branches: ["production"]
+
+jobs:
+    publish-production-image:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+
+            # Login to Azure Container Registry
+            - name: Login to ACR
+              uses: azure/docker-login@v1
+              with:
+                  login-server: ${{ secrets.ACR_LOGIN_SERVER }}
+                  username: ${{ secrets.ACR_USERNAME }}
+                  password: ${{ secrets.ACR_PASSWORD }}
+
+            # Build Docker image
+            - name: Build Docker Image
+              run: |
+                  VERSION=$(node -p "require('./package.json').version")
+                  docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/${{ secrets.ACR_NAME }}:$VERSION .
+                  docker tag ${{ secrets.ACR_LOGIN_SERVER }}/${{ secrets.ACR_NAME }}:$VERSION ${{ secrets.ACR_LOGIN_SERVER }}/${{ secrets.ACR_NAME }}:latest
+
+            # Push Docker image to ACR
+            - name: Push Docker Image to ACR
+              run: |
+                  VERSION=$(node -p "require('./package.json').version")
+                  docker push ${{ secrets.ACR_LOGIN_SERVER }}/${{ secrets.ACR_NAME }}:$VERSION
+                  docker push ${{ secrets.ACR_LOGIN_SERVER }}/${{ secrets.ACR_NAME }}:latest
