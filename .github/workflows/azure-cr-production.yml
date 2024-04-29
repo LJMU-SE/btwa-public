@@ -5,7 +5,7 @@ on:
         branches: ["production"]
 
 jobs:
-    build-and-push:
+    publish-production-image:
         runs-on: ubuntu-latest
 
         steps:
