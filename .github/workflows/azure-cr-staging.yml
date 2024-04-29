@@ -5,7 +5,7 @@ on:
         branches: ["staging"]
 
 jobs:
-    build-and-push:
+    publish-staging-image:
         runs-on: ubuntu-latest
 
         steps:
