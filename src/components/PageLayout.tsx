@@ -2,6 +2,7 @@
 import { Poppins } from "next/font/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import NavBar from "./Navbar";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -53,7 +54,8 @@ function Layout({ children, title, description, image }: LayoutProps) {
                 <link rel="icon" type="image/webp" href="/img/icons/light.webp" media="(prefers-color-scheme: light)" />
                 <link rel="icon" type="image/webp" href="/img/icons/dark.webp" media="(prefers-color-scheme: dark)" />
             </Head>
-            {children}
+            <NavBar />
+            <div className="pt-16 min-h-[100dvh] flex flex-col">{children}</div>
         </main>
     );
 }
