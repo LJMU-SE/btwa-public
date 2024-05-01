@@ -27,7 +27,7 @@ function Layout({ children, title, description, image }: LayoutProps) {
     const router = useRouter();
     const url = `https://www.ljmu.dev${router.asPath}`;
     return (
-        <main className={poppins.variable}>
+        <main className={`${poppins.variable} bg-body-bg`}>
             <Head>
                 {/* <!-- HTML Meta Tags --> */}
                 <title>{pageTitle}</title>

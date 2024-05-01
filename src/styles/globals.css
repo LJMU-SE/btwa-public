@@ -13,3 +13,23 @@
     background-position: bottom right;
     background-repeat: no-repeat;
 }
+
+#hero {
+    background-image: url("/img/backgrounds/landing/hero.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fade {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
