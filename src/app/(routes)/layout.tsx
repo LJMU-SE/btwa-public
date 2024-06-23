@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Kodchasan } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const kodchasan = Kodchasan({
     subsets: ["latin"],
@@ -22,9 +23,10 @@ export default function Layout({
 }>) {
     return (
         <html lang="en">
-            <body className={kodchasan.className}>
+            <body className={`${kodchasan.className} bg-primary`}>
                 <NavBar />
                 <main>{children}</main>
+                <Footer />
             </body>
         </html>
     );

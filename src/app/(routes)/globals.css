@@ -4,36 +4,10 @@
 
 body,
 html {
-    background-color: #d9d9d9;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-#error-container {
-    background-image: url("/img/backgrounds/404/bg.webp");
-    background-size: contain;
-    background-attachment: fixed;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-}
-
-#hero {
-    background-image: url("/img/backgrounds/landing/hero.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.fade {
-    animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
 }

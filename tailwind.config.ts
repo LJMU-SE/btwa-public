@@ -5,8 +5,7 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                "body-bg": "#000000",
-                orange: "#ff9000",
+                primary: "#F3F3F3",
             },
         },
     },
