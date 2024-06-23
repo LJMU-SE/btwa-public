@@ -2,7 +2,7 @@
 import { Poppins } from "next/font/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import NavBar from "./NavBar";
+import NavBar from "./NavBar (copy)";
 
 const poppins = Poppins({
     subsets: ["latin"],
