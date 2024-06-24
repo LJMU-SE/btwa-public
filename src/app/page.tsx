@@ -7,7 +7,7 @@ export default function Home() {
         <>
             <div className="bg-primary relative z-30">
                 <Container>
-                    <section id={"hero"} className="h-[calc(100dvh-80px)] flex flex-col ">
+                    <section id={"hero"} className="h-[calc(100dvh-80px)] sticky block flex flex-col ">
                         <div className="flex-grow flex items-center justify-start">
                             <div className={"flex flex-col gap-10"}>
                                 <h1 className="text-[20px] lg:text-[40px] font-semibold">
@@ -30,7 +30,7 @@ export default function Home() {
             </div>
 
             {/* Container 1 */}
-            <section id="our-projects" className="h-dvh bg-black text-white z-20 sticky bottom-0 text-center md:text-left">
+            <section id="our-projects" className="h-dvh bg-black text-white z-20 sticky block bottom-0 text-center md:text-left">
                 <div className="h-full w-full flex">
                     <div className="w-full md:w-1/2 flex items-center">
                         <Container>
@@ -53,7 +53,7 @@ export default function Home() {
             </section>
 
             {/* Container 2 */}
-            <section id="meet-the-team" className="h-dvh bg-primary sticky bottom-0 z-10 text-center md:text-right">
+            <section id="meet-the-team" className="h-dvh bg-primary sticky block bottom-0 z-10 text-center md:text-right">
                 <div className="h-full w-full flex">
                     <img className="w-1/2 h-dvh object-cover hidden md:block" src={"/img/Landing-2.png"} />
                     <div className="w-full md:w-1/2 flex items-center">
