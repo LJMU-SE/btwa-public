@@ -30,7 +30,7 @@ export default function Home() {
             </div>
 
             {/* Container 1 */}
-            <section id="our-projects" className="h-[100dvh] bg-black text-white z-20 sticky bottom-0 text-center md:text-left">
+            <section id="our-projects" className="h-dvh bg-black text-white z-20 sticky bottom-0 text-center md:text-left">
                 <div className="h-full w-full flex">
                     <div className="w-full md:w-1/2 flex items-center">
                         <Container>
@@ -48,14 +48,14 @@ export default function Home() {
                             </Link>
                         </Container>
                     </div>
-                    <img className="w-1/2 h-[100dvh] object-cover hidden md:block" src={"/img/Landing-1.png"} />
+                    <img className="w-1/2 h-dvh object-cover hidden md:block" src={"/img/Landing-1.png"} />
                 </div>
             </section>
 
             {/* Container 2 */}
-            <section id="meet-the-team" className="h-[100dvh] bg-primary sticky bottom-0 z-10 text-center md:text-right">
+            <section id="meet-the-team" className="h-dvh bg-primary sticky bottom-0 z-10 text-center md:text-right">
                 <div className="h-full w-full flex">
-                    <img className="w-1/2 h-[100dvh] object-cover hidden md:block" src={"/img/Landing-2.png"} />
+                    <img className="w-1/2 h-dvh object-cover hidden md:block" src={"/img/Landing-2.png"} />
                     <div className="w-full md:w-1/2 flex items-center">
                         <Container>
                             <h2 className="text-[36px] uppercase">Meet the Team</h2>

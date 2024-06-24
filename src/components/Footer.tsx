@@ -57,10 +57,18 @@ export default function Footer() {
                             </Link>
                         </div>
                         <div className="flex items-center gap-5">
-                            <FaInstagram size={30} />
-                            <FaYoutube size={30} />
-                            <FaGithub size={30} />
-                            <BsTwitterX size={30} />
+                            <Link target="_blank" href="https://instagram.com/LJMU">
+                                <FaInstagram size={30} />
+                            </Link>
+                            <Link target="_blank" href="https://www.youtube.com/@ljmutv">
+                                <FaYoutube size={30} />
+                            </Link>
+                            <Link target="_blank" href="https://github.com/LJMU-SE">
+                                <FaGithub size={30} />
+                            </Link>
+                            <Link target="_blank" href="https://x.com/LJMU">
+                                <BsTwitterX size={30} />
+                            </Link>
                         </div>
                     </div>
 
