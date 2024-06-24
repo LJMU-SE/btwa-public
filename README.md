@@ -4,7 +4,7 @@
 
 [https://www.ljmu.dev](https://www.ljmu.dev "Our Website")
 
-This repository contains the source code and publishing workflows for our group portfolio. 
+This repository contains the source code and publishing workflows for our group portfolio.
 
 ## Contributors
 
