@@ -7,7 +7,7 @@ export default function Home() {
         <>
             <div className="bg-primary relative z-30">
                 <Container>
-                    <section id={"hero"} className="h-[calc(100dvh-80px)] sticky block flex flex-col ">
+                    <section id={"hero"} className="h-[calc(100dvh-80px)] sticky flex flex-col ">
                         <div className="flex-grow flex items-center justify-start">
                             <div className={"flex flex-col gap-10"}>
                                 <h1 className="text-[20px] lg:text-[40px] font-semibold">
@@ -41,7 +41,7 @@ export default function Home() {
                             </p>
                             <Link
                                 href="#"
-                                className="bg-white hover:bg-white/85 rounded-md px-6 py-2 text-black w-full md:w-max flex justify-center items-center transition-all gap-3 group md:float-right mt-[15px] font-semibold"
+                                className="bg-white hover:bg-white/85 rounded-md px-6 py-2 text-black w-full md:w-max flex justify-center items-center transition-all gap-3 group md:float-left mt-[15px] font-semibold"
                             >
                                 Learn More
                                 <FaArrowRight className="inline ml-3 group-hover:translate-x-1 transition-all" />
@@ -64,7 +64,7 @@ export default function Home() {
                                 Pellentesque euismod in diam in hendrerit. Sed vehicula arcu vel dictum blandit.
                             </p>
                             <Link
-                                href="#"
+                                href="/about-us"
                                 className="bg-black hover:bg-black/85 rounded-md px-6 py-2 text-white w-full md:w-max flex justify-center items-center transition-all gap-3 group md:float-right mt-[15px] font-semibold"
                             >
                                 Learn More
