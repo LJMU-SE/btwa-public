@@ -4,9 +4,6 @@ export default <Project>{
     id: "cold-frame",
     title: "Cold Frame",
     summary: "Garden cold-frame monitoring system.",
-
-    description: ``,
-
     contributors: ["ob", "jm"],
     technologies: ["Embedded Systems", "ESP32", "C++", "Data Visualisation", "APIs"],
     github: "https://www.github.com/LJMU-SE/cold-frame-project",

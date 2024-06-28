@@ -56,7 +56,11 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
                 <div className={"flex flex-wrap md:flex-nowrap mb-10 gap-5"}>
                     <ProjectInfoSideBar project={project} />
                     {description && (
-                        <div id="project-description" className="w-full md:w-2/3" dangerouslySetInnerHTML={{ __html: description }}></div>
+                        <div
+                            id="project-description"
+                            className="w-full md:w-2/3"
+                            dangerouslySetInnerHTML={{ __html: `<h1>Description</h1> ${description}` }}
+                        ></div>
                     )}
                 </div>
             )}
