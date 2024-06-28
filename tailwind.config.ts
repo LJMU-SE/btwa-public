@@ -6,6 +6,7 @@ const config: Config = {
         extend: {
             colors: {
                 primary: "#F3F3F3",
+                accent: "#FF9000",
             },
         },
     },

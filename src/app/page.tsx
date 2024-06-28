@@ -40,7 +40,7 @@ export default function Home() {
                                 Pellentesque euismod in diam in hendrerit. Sed vehicula arcu vel dictum blandit.
                             </p>
                             <Link
-                                href="#"
+                                href="/projects"
                                 className="bg-white hover:bg-white/85 rounded-md px-6 py-2 text-black w-full md:w-max flex justify-center items-center transition-all gap-3 group md:float-left mt-[15px] font-semibold"
                             >
                                 Learn More

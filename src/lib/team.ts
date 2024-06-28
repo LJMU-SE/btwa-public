@@ -2,6 +2,7 @@ import TeamMember from "./interfaces/TeamMember.interface";
 
 export default [
     {
+        id: "ob",
         name: "Ollie Beenham",
         role: "Student",
         description:
@@ -12,6 +13,7 @@ export default [
         site: "https://beenhamow.co.uk",
     },
     {
+        id: "jm",
         name: "Jack Malone",
         role: "Student",
         description:

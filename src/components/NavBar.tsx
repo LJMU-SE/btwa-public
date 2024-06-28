@@ -13,7 +13,7 @@ const links = [
     },
     {
         name: "Our Projects",
-        href: "/our-projects",
+        href: "/projects",
     },
     {
         name: "The Team",
@@ -47,7 +47,7 @@ export default function NavBar() {
                         <Link href="/" onClick={closeNav} className="hover:opacity-50 transition-all">
                             Home
                         </Link>
-                        <Link href="/our-projects" onClick={closeNav} className="hover:opacity-50 transition-all">
+                        <Link href="/projects" onClick={closeNav} className="hover:opacity-50 transition-all">
                             Our Projects
                         </Link>
                         <Link href="/about-us" onClick={closeNav} className="hover:opacity-50 transition-all">
@@ -76,7 +76,7 @@ export default function NavBar() {
                         <Link href="/" onClick={closeNav} className="hover:opacity-50 transition-all">
                             Home
                         </Link>
-                        <Link href="/our-projects" onClick={closeNav} className="hover:opacity-50 transition-all">
+                        <Link href="/projects" onClick={closeNav} className="hover:opacity-50 transition-all">
                             Our Projects
                         </Link>
                         <Link href="/about-us" onClick={closeNav} className="hover:opacity-50 transition-all">
