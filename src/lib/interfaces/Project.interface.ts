@@ -1,8 +1,8 @@
-export interface ProjectStructureProps {
+export interface Project {
     id: string;
     title: string;
     summary: string;
-    description: string;
+    contributors: string[];
     technologies: string[];
     website?: string;
     github: string;

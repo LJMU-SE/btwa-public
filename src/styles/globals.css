@@ -55,3 +55,29 @@ html {
         opacity: 1;
     }
 }
+
+#project-description * {
+    font-size: revert;
+    font-weight: revert;
+    line-height: revert;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#project-description h1:not(:first-of-type),
+h2:not(:first-of-type),
+h3:not(:first-of-type),
+h4:not(:first-of-type),
+h5:not(:first-of-type),
+h6:not(:first-of-type) {
+    margin-top: 30px;
+}
+
+#project-description img {
+    max-height: 500px;
+    margin-top: 20px;
+}
+
+#project-description li {
+    padding-left: 40px;
+}
