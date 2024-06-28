@@ -4,7 +4,7 @@ import TeamMembers from "@/lib/team";
 
 export default function AboutUs() {
     return (
-        <section id="meet-the-team">
+        <section id="meet-the-team" className="lg:min-h-dvh pt-5">
             <Container>
                 <h1 className="text-4xl text-center font-semibold">Meet the Team</h1>
                 <p className="text-center mt-5">Meet the members of our team here at Liverpool John Moore's University!</p>
