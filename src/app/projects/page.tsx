@@ -6,6 +6,7 @@ import { Project } from "@/lib/interfaces/Project.interface";
 import { useEffect, useState } from "react";
 import getLastModified from "@/lib/GetLastUpdated";
 import { BarLoader } from "react-spinners";
+import { toast } from "react-toastify";
 
 export default function OurProjects() {
     const [projects, setProjects] = useState<Project[]>([]);
@@ -14,6 +15,12 @@ export default function OurProjects() {
         const timeout = setTimeout(async () => {
             const projectFiles = await fetch("/api/projects");
             const projectData = await projectFiles.json();
+
+            if (projectData.error) {
+                console.error(projectData.error);
+                toast.error(projectData.error);
+            }
+
             Promise.all(projectData.map(getLastModified)).then(() => {
                 setProjects(projectData.sort((a: Project, b: Project) => new Date(b.date).getTime() - new Date(a.date).getTime()));
             });

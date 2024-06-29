@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { BarLoader } from "react-spinners";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 export default function ProjectDetailPage({ params }: { params: { id: string } }) {
     const [project, setProject] = useState<Project | null>(null);
@@ -18,7 +19,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
     useEffect(() => {
         console.log(`Loading project information for ${params.id}`);
 
-        const timeout = setTimeout(async () => {
+        const loadProject = async () => {
             const projectRequest = await fetch(`/api/projects/${params.id}`);
             const projectData = await projectRequest.json();
 
@@ -26,14 +27,15 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
 
             if (projectData.error) {
                 console.error(projectData.error);
+                toast.error(projectData.error);
                 return router.push("/projects");
             }
 
             setProject(projectData.project);
             setDescription(projectData.description);
-        }, 500);
+        };
 
-        return () => clearTimeout(timeout);
+        loadProject();
     }, []);
 
     return (
