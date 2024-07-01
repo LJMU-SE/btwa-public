@@ -38,6 +38,13 @@ export default function Footer() {
                             <Link
                                 className="text-[16px] hover:opacity-80 transition-all w-full"
                                 target="_blank"
+                                href="https://www.github.com/LJMU-SE/www.ljmu.dev"
+                            >
+                                Source Code
+                            </Link>
+                            <Link
+                                className="text-[16px] hover:opacity-80 transition-all w-full"
+                                target="_blank"
                                 href="https://www.github.com/LJMU-SE"
                             >
                                 GitHub

@@ -30,7 +30,7 @@ export default function OurProjects() {
     }, []);
 
     return (
-        <section id="meet-the-team" className="lg:min-h-dvh pt-5">
+        <section id="meet-the-team" className="pt-5">
             <Container>
                 <h1 className="text-4xl text-center font-semibold">Our Projects</h1>
                 <p className="text-center mt-5">
