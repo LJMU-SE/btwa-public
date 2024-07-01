@@ -6,25 +6,6 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 
-const links = [
-    {
-        name: "Home",
-        href: "/",
-    },
-    {
-        name: "Our Projects",
-        href: "/projects",
-    },
-    {
-        name: "The Team",
-        href: "/about-us",
-    },
-    {
-        name: "Contact Us",
-        href: "/contact-us",
-    },
-];
-
 export default function NavBar() {
     const [showMobileNav, setShowMobileNav] = useState(false);
 

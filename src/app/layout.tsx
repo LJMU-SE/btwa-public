@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Kodchasan } from "next/font/google";
 import "@/styles/globals.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
@@ -24,6 +26,7 @@ export default function Layout({
     return (
         <html lang="en">
             <body className={`${kodchasan.className} bg-primary`}>
+                <ToastContainer stacked position="bottom-right" className={"select-none"} />
                 <NavBar />
                 <main>{children}</main>
                 <Footer />
