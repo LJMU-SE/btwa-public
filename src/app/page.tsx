@@ -36,8 +36,8 @@ export default function Home() {
                         <Container>
                             <h2 className="text-[36px] uppercase">Our Projects</h2>
                             <p className="text-[14px] mt-[15px]">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique diam eget ullamcorper pellentesque.
-                                Pellentesque euismod in diam in hendrerit. Sed vehicula arcu vel dictum blandit.
+                                Our team has worked on a number of projects both curricular and extracurricular. These projects are outlined within
+                                this portfolio.
                             </p>
                             <Link
                                 href="/projects"
@@ -60,8 +60,8 @@ export default function Home() {
                         <Container>
                             <h2 className="text-[36px] uppercase">Meet the Team</h2>
                             <p className="text-[14px] mt-[15px]">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique diam eget ullamcorper pellentesque.
-                                Pellentesque euismod in diam in hendrerit. Sed vehicula arcu vel dictum blandit.
+                                Our team consists of some students at John Moores University. We are committed to learning new technologies and
+                                expanding our knowledge in the field of software engineering.
                             </p>
                             <Link
                                 href="/about-us"

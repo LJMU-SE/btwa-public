@@ -5,13 +5,13 @@ export default async function getLastModified(project: Project) {
         const localLastModified = localStorage.getItem(`lastModified-${project.id}`);
         const now = new Date();
 
-        // If the date is stored in local storage, check if it is older than 24 hours
+        // If the date is stored in local storage, check if it is older than 1 hour
         if (localLastModified) {
             // Parse the stored data
             const { lastModified, timestamp } = JSON.parse(localLastModified);
 
-            // If the data is older than 24 hours, update it
-            if (now.getTime() - new Date(timestamp).getTime() < 86400000) {
+            // If the data is older than 1 hour, update it
+            if (now.getTime() - new Date(timestamp).getTime() < 3600000) {
                 project.date = lastModified;
                 return resolve(project);
             }
