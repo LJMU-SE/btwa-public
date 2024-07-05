@@ -17,7 +17,7 @@ export default [
         name: "Jack Malone",
         role: "Student",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique diam eget ullamcorper pellentesque. Pellentesque euismod in diam in hendrerit. Sed vehicula arcu vel dictum blandit.",
+            "I'm Jack, a software engineering student with a strong interest in embedded development and object oriented programming. Feel free to get in touch about any potential projects or opportunities!",
         github: "https://github.com/LJMU-JackMallo",
         email: "j.malone@2023.ljmu.ac.uk",
         avatar: "/img/team/Jack.png",
@@ -27,7 +27,7 @@ export default [
         name: "Precious Offodile",
         role: "Student",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique diam eget ullamcorper pellentesque. Pellentesque euismod in diam in hendrerit. Sed vehicula arcu vel dictum blandit.",
+            "Hi, My name is Precious, I am a software engineering student at LJMU, I love the creation of websites and apps and how we integrate them in our day to day lives. My interests lie in both the technical and creative aspects of software development, and I'm always eager to learn and apply new technologies.",
         github: "https://github.com/poffodile",
         email: "p.c.offodile@2022.ljmu.ac.uk",
         avatar: "/img/team/Precious.png",
