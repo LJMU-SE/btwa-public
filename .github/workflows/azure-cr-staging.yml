@@ -22,9 +22,13 @@ jobs:
             # Build Docker image
             - name: Build Docker Image
               run: |
-                  docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/${{ secrets.ACR_NAME }}:beta .
+                  VERSION=$(node -p "require('./package.json').version")
+                  docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/${{ secrets.ACR_NAME }}:$VERSION-beta .
+                  docker tag ${{ secrets.ACR_LOGIN_SERVER }}/${{ secrets.ACR_NAME }}:$VERSION-beta ${{ secrets.ACR_LOGIN_SERVER }}/${{ secrets.ACR_NAME }}:beta
 
             # Push Docker image to ACR
             - name: Push Docker Image to ACR
               run: |
+                  VERSION=$(node -p "require('./package.json').version")
+                  docker push ${{ secrets.ACR_LOGIN_SERVER }}/${{ secrets.ACR_NAME }}:$VERSION-beta
                   docker push ${{ secrets.ACR_LOGIN_SERVER }}/${{ secrets.ACR_NAME }}:beta
